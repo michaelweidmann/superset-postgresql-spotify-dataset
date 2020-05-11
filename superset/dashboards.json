@@ -1,0 +1,663 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": null,
+                "dashboard_title": "Spotify Data Dashboard #1",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{}\", \"remote_id\": 7}",
+                "position_json": "{\"CHART-Bb5QTezC_Q\":{\"children\":[],\"id\":\"CHART-Bb5QTezC_Q\",\"meta\":{\"chartId\":88,\"height\":109,\"sliceName\":\"Example Query (Vorlesung)\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-DXFZeV-vVP\"],\"type\":\"CHART\"},\"CHART-FJKNr5U_wb\":{\"children\":[],\"id\":\"CHART-FJKNr5U_wb\",\"meta\":{\"chartId\":87,\"height\":48,\"sliceName\":\"Streams\",\"width\":8},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-k47rGdgKtW\"],\"type\":\"CHART\"},\"CHART-GgCgdFNeFY\":{\"children\":[],\"id\":\"CHART-GgCgdFNeFY\",\"meta\":{\"chartId\":83,\"height\":50,\"sliceName\":\"Name Cloud Top 10\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-L8fuvjLAw1\"],\"type\":\"CHART\"},\"CHART-P8BBF4a_U_\":{\"children\":[],\"id\":\"CHART-P8BBF4a_U_\",\"meta\":{\"chartId\":82,\"height\":50,\"sliceName\":\"Name Cloud Overall\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-L8fuvjLAw1\"],\"type\":\"CHART\"},\"CHART-vfcWkHKdUA\":{\"children\":[],\"id\":\"CHART-vfcWkHKdUA\",\"meta\":{\"chartId\":84,\"height\":50,\"sliceName\":\"Name Cloud #1\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-L8fuvjLAw1\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-k47rGdgKtW\",\"ROW-L8fuvjLAw1\",\"ROW-DXFZeV-vVP\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Spotify Data Dashboard #1\"},\"type\":\"HEADER\"},\"MARKDOWN-SmICxYD7QC\":{\"children\":[],\"id\":\"MARKDOWN-SmICxYD7QC\",\"meta\":{\"code\":\"# Spotify Data Dashboard 1\\n\\nDies sind allgemeine Visualisierungen des Spotify Datensatzes.\\n\\nZu sehen sind:\\n- \\\"Streams per month\\\": Alle Streams im Monat zusammengez\\u00e4hlt und in einem Balkendiagramm visualisiert.\\n- Die sogenannten \\\"Name Cloud\\\"-Charts zeigen wie h\\u00e4ufig ein K\\u00fcnstler\\n  1. in den Charts vorgekommen ist (\\\"Name Cloud Overall\\\").\\n  2. in den Top 10 vorgekommen ist (\\\"Name Cloud Top 10\\\").\\n  3. auf dem ersten Platz gelandet ist (\\\"Name Cloud #1\\\").\\n- Ganz unten ist eine Aufgabe aus der Vorlesung zu sehen, welche hier eingebunden wurde.\\n\",\"height\":48,\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-k47rGdgKtW\"],\"type\":\"MARKDOWN\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-DXFZeV-vVP\":{\"children\":[\"CHART-Bb5QTezC_Q\"],\"id\":\"ROW-DXFZeV-vVP\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-L8fuvjLAw1\":{\"children\":[\"CHART-P8BBF4a_U_\",\"CHART-GgCgdFNeFY\",\"CHART-vfcWkHKdUA\"],\"id\":\"ROW-L8fuvjLAw1\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-k47rGdgKtW\":{\"children\":[\"MARKDOWN-SmICxYD7QC\",\"CHART-FJKNr5U_wb\"],\"id\":\"ROW-k47rGdgKtW\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.name_cloud",
+                            "datasource_type": "table",
+                            "id": 82,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"bnbColors\", \"controlGroups\": {\"metric\": \"metrics\", \"series\": \"groupby\"}, \"datasource\": \"16__table\", \"granularity_sqla\": \"stream_date\", \"label_colors\": {\"Capital Bra\": \"#ff5a5f\"}, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"artist\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 445, \"is_dttm\": false, \"optionName\": \"_col_artist\", \"type\": \"VARCHAR(200)\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"COUNT(artist)\", \"optionName\": \"metric_eikt24bmoc_d28flejrx4c\", \"sqlExpression\": null}, \"rotation\": \"square\", \"row_limit\": 100, \"series\": \"artist\", \"size_from\": 10, \"size_to\": 70, \"slice_id\": 82, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"word_cloud\", \"remote_id\": 82, \"datasource_name\": \"name_cloud\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Name Cloud Overall",
+                            "viz_type": "word_cloud"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.name_cloud",
+                            "datasource_type": "table",
+                            "id": 83,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_lhk60f95nk7_gj5i0zsm4yi\", \"fromFormData\": true, \"isExtra\": false, \"operator\": null, \"sqlExpression\": \"rank > 10\", \"subject\": null}], \"color_scheme\": \"bnbColors\", \"controlGroups\": {\"metric\": \"metrics\", \"series\": \"groupby\"}, \"datasource\": \"16__table\", \"granularity_sqla\": \"stream_date\", \"label_colors\": {\"Capital Bra\": \"#ff5a5f\"}, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"artist\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 445, \"is_dttm\": false, \"optionName\": \"_col_artist\", \"type\": \"VARCHAR(200)\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"COUNT(artist)\", \"optionName\": \"metric_riefubhl6i_nt61lirpoyg\", \"sqlExpression\": null}, \"rotation\": \"square\", \"row_limit\": 100, \"series\": \"artist\", \"size_from\": 10, \"size_to\": 70, \"slice_id\": 83, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"word_cloud\", \"remote_id\": 83, \"datasource_name\": \"name_cloud\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Name Cloud Top 10",
+                            "viz_type": "word_cloud"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.name_cloud",
+                            "datasource_type": "table",
+                            "id": 84,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_v8qpn3rgpe_tdv7e8a9ze\", \"fromFormData\": true, \"isExtra\": false, \"operator\": null, \"sqlExpression\": \"rank = 1\", \"subject\": null}], \"color_scheme\": \"bnbColors\", \"controlGroups\": {\"metric\": \"metrics\", \"series\": \"groupby\"}, \"datasource\": \"16__table\", \"granularity_sqla\": \"stream_date\", \"label_colors\": {\"Capital Bra\": \"#ff5a5f\"}, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"artist\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 445, \"is_dttm\": false, \"optionName\": \"_col_artist\", \"type\": \"VARCHAR(200)\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"COUNT(artist)\", \"optionName\": \"metric_szon9zxzbgt_bmsj1xpgy6u\", \"sqlExpression\": null}, \"rotation\": \"square\", \"row_limit\": null, \"series\": \"artist\", \"size_from\": 10, \"size_to\": 70, \"slice_id\": 84, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"word_cloud\", \"remote_id\": 84, \"datasource_name\": \"name_cloud\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Name Cloud #1",
+                            "viz_type": "word_cloud"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.almost_everything",
+                            "datasource_type": "table",
+                            "id": 87,
+                            "params": "{\"adhoc_filters\": [], \"annotation_layers\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"bnbColors\", \"comparison_type\": \"values\", \"contribution\": false, \"controlGroups\": {\"groupby\": \"groupby\", \"metrics\": \"metrics\"}, \"datasource\": \"17__table\", \"granularity_sqla\": \"stream_date\", \"groupby\": [], \"label_colors\": {\"Anuel AA\": \"#7b0051\", \"Apache 207\": \"#ffb400\", \"Ariana Grande\": \"#7b0051\", \"Ava Max\": \"#b37e00\", \"Avicii\": \"#ff1ab1\", \"Azet\": \"#00a1b3\", \"Bausa\": \"#00d1c1\", \"Bazzi\": \"#00b3a5\", \"Billie Eilish\": \"#007A87\", \"Bonez MC\": \"#988b4e\", \"Calvin Harris\": \"#cc0086\", \"Capital Bra\": \"#ff5a5f\", \"Capo\": \"#cbc29a\", \"Cardi B\": \"#b37e00\", \"DJ Snake\": \"#007A87\", \"Daddy Yankee\": \"#007A87\", \"Dalex\": \"#005c66\", \"Dardan\": \"#8ce071\", \"Drake\": \"#7b0051\", \"Dua Lipa\": \"#00ffeb\", \"Ed Sheeran\": \"#00d1c1\", \"Eno\": \"#cbc29a\", \"Farid Bang\": \"#ff5a5f\", \"Fero47\": \"#ff3339\", \"Halsey\": \"#b4a76c\", \"Imagine Dragons\": \"#ff3339\", \"Joker Bra\": \"#00a1b3\", \"Jonas Brothers\": \"#8ce071\", \"Juice WRLD\": \"#ff1ab1\", \"Juju\": \"#ffb400\", \"KC Rebell\": \"#00ffeb\", \"Kalazh44\": \"#00b3a5\", \"Khalid\": \"#00a1b3\", \"Kontra K\": \"#cbc29a\", \"Kygo\": \"#ff8083\", \"Lady Gaga\": \"#ffb400\", \"Lauv\": \"#00b3a5\", \"Lena\": \"#988b4e\", \"Lewis Capaldi\": \"#ff5a5f\", \"Lil Baby\": \"#007A87\", \"Lil Nas X\": \"#bbedab\", \"Lil Tecca\": \"#bbedab\", \"Lizzo\": \"#ffd266\", \"Loredana\": \"#b4a76c\", \"Luciano\": \"#005c66\", \"MERO\": \"#cc0086\", \"Mabel\": \"#cc0086\", \"Mariah Carey\": \"#988b4e\", \"Marshmello\": \"#00ffeb\", \"Nimo\": \"#ff1ab1\", \"Ozuna\": \"#ffb400\", \"Paulo Londra\": \"#b4a76c\", \"Post Malone\": \"#ff8083\", \"Queen\": \"#ff8083\", \"RAF Camora\": \"#00a1b3\", \"RIN\": \"#55d12e\", \"ROSAL\\u00cdA\": \"#ff8083\", \"Robin Schulz\": \"#00ffeb\", \"Roddy Ricch\": \"#b37e00\", \"SUM(no_streams)\": \"#00d1c1\", \"Sam Smith\": \"#005c66\", \"Samra\": \"#8ce071\", \"Sech\": \"#55d12e\", \"Selena Gomez\": \"#7b0051\", \"Shindy\": \"#bbedab\", \"Shirin David\": \"#ff3339\", \"Sido\": \"#ff5a5f\", \"Summer Cem\": \"#ffd266\", \"Taylor Swift\": \"#00d1c1\", \"The Chainsmokers\": \"#cc0086\", \"Tones and I\": \"#8ce071\", \"Travis Scott\": \"#55d12e\", \"Tyga\": \"#bbedab\", \"Ufo361\": \"#ffd266\", \"XXXTENTACION\": \"#b4a76c\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"no_streams\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 6, \"is_dttm\": false, \"optionName\": \"_col_no_streams\", \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(no_streams)\", \"optionName\": \"metric_459t5ygaxzx_hxo0dr56k3n\", \"sqlExpression\": null}], \"order_desc\": true, \"reduce_x_ticks\": false, \"resample_method\": null, \"resample_rule\": null, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_bar_value\": false, \"show_brush\": \"auto\", \"show_controls\": false, \"show_legend\": true, \"slice_id\": 87, \"time_grain_sqla\": \"P1M\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": null, \"url_params\": {}, \"viz_type\": \"bar\", \"x_axis_format\": \"smart_date\", \"x_axis_label\": \"\", \"x_axis_showminmax\": false, \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"remote_id\": 87, \"datasource_name\": \"almost_everything\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Sum of streams per month",
+                            "viz_type": "bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.vorlesung",
+                            "datasource_type": "table",
+                            "id": 88,
+                            "params": "{\"adhoc_filters\": [], \"align_pn\": false, \"all_columns\": [], \"color_pn\": true, \"controlGroups\": {\"groupby\": \"groupby\", \"metrics\": \"metrics\"}, \"datasource\": \"18__table\", \"granularity_sqla\": \"stream_date\", \"groupby\": [], \"include_search\": false, \"include_time\": false, \"metrics\": [{\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"stream_date\", \"optionName\": \"metric_4ynarsipgrd_jqoct15cve\", \"sqlExpression\": \"stream_date\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"artist\", \"optionName\": \"metric_4ienib3i3yq_mmk9d3re2jo\", \"sqlExpression\": \"artist\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"track_name\", \"optionName\": \"metric_6ktdxthyp29_yu6y2zupzsa\", \"sqlExpression\": \"track_name\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"rank\", \"optionName\": \"metric_ygll6fpf4l_53t91frfgj7\", \"sqlExpression\": \"rank\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"no_streams\", \"optionName\": \"metric_x5hw5xs9kq_278dq5b0n6p\", \"sqlExpression\": \"no_streams\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"artist_2\", \"optionName\": \"metric_5gcsp0cf3o7_athc7j28bi\", \"sqlExpression\": \"artist_2\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"track_name_2\", \"optionName\": \"metric_s2znpfi4hw_23832er4pdt\", \"sqlExpression\": \"track_name_2\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"no_streams_2\", \"optionName\": \"metric_ufvsj6yht0p_8ol0oua96k9\", \"sqlExpression\": \"no_streams_2\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"rank_2\", \"optionName\": \"metric_n9s48k0cr9i_99b4y4al7io\", \"sqlExpression\": \"rank_2\"}], \"order_by_cols\": [], \"order_desc\": true, \"page_length\": 0, \"percent_metrics\": [], \"row_limit\": 10000, \"show_cell_bars\": true, \"slice_id\": 88, \"table_filter\": false, \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": null, \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 88, \"datasource_name\": \"vorlesung\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Example Query (Vorlesung)",
+                            "viz_type": "table"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        },
+        {
+            "__Dashboard__": {
+                "css": null,
+                "dashboard_title": "Spotify Data Dashboard #2",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"filter_scopes\": {\"86\": {\"artist\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}}, \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{\\\"86\\\": {\\\"artist\\\": \\\"Calvin Harris\\\"}}\", \"remote_id\": 8}",
+                "position_json": "{\"CHART-S_OLXSATI3\":{\"children\":[],\"id\":\"CHART-S_OLXSATI3\",\"meta\":{\"chartId\":89,\"height\":50,\"sliceName\":\"Number of streams overall\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-sSQmNrmqVe\"],\"type\":\"CHART\"},\"CHART-gB98Zvk728\":{\"children\":[],\"id\":\"CHART-gB98Zvk728\",\"meta\":{\"chartId\":86,\"height\":49,\"sliceName\":\"Artist filter\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-sSQmNrmqVe\"],\"type\":\"CHART\"},\"CHART-pBncZfo3VK\":{\"children\":[],\"id\":\"CHART-pBncZfo3VK\",\"meta\":{\"chartId\":87,\"height\":50,\"sliceName\":\"Streams\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-D8OJ1PL_2K\"],\"type\":\"CHART\"},\"CHART-wctBmaUwan\":{\"children\":[],\"id\":\"CHART-wctBmaUwan\",\"meta\":{\"chartId\":90,\"height\":50,\"sliceName\":\"Daily streams\",\"width\":8},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-D8OJ1PL_2K\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-sSQmNrmqVe\",\"ROW-D8OJ1PL_2K\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Spotify Data Dashboard #2\"},\"type\":\"HEADER\"},\"MARKDOWN-JAt22rZzuu\":{\"children\":[],\"id\":\"MARKDOWN-JAt22rZzuu\",\"meta\":{\"code\":\"# Spotify Data Dashboard 2\\n\\nIn dem zweiten Dashboard werden Visualsierungen rund um den K\\u00fcnstler vorgestellt.\\nDer K\\u00fcnstler kann im rechten Feld (\\\"Artist filter\\\") ausgesucht werden.\\nDabei passen sich die Visualsierungen der Auswahl an.\\n\\nZu sehen sind folgende Visualisierungen:\\n- \\\"Number of streams overall\\\": Die Anzahl der Streams des gesamten Datensatzes f\\u00fcr den ausgew\\u00e4hlten K\\u00fcnstler.\\n- \\\"Monthly streams\\\": Die Anzahl der Streams in Monate aufgeteilt f\\u00fcr den ausgew\\u00e4hlten K\\u00fcnstler.\\n- \\\"Daily streams\\\": Die Anzahl der Streams des ausgew\\u00e4hlten K\\u00fcnstlers pro Tag.\\n\",\"height\":50,\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-sSQmNrmqVe\"],\"type\":\"MARKDOWN\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-D8OJ1PL_2K\":{\"children\":[\"CHART-pBncZfo3VK\",\"CHART-wctBmaUwan\"],\"id\":\"ROW-D8OJ1PL_2K\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-sSQmNrmqVe\":{\"children\":[\"MARKDOWN-JAt22rZzuu\",\"CHART-gB98Zvk728\",\"CHART-S_OLXSATI3\"],\"id\":\"ROW-sSQmNrmqVe\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.almost_everything",
+                            "datasource_type": "table",
+                            "id": 86,
+                            "params": "{\"adhoc_filters\": [], \"controlGroups\": {}, \"datasource\": \"17__table\", \"date_filter\": false, \"filter_configs\": [{\"asc\": true, \"clearable\": true, \"column\": \"artist\", \"defaultValue\": \"Capital Bra\", \"key\": \"IC5cL4sM7\", \"label\": \"K\\u00fcnstler\", \"multiple\": false}], \"granularity_sqla\": \"stream_date\", \"instant_filtering\": true, \"show_druid_time_granularity\": false, \"show_druid_time_origin\": false, \"show_sqla_time_column\": false, \"show_sqla_time_granularity\": false, \"slice_id\": 86, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"86\\\": {\\\"artist\\\": \\\"Calvin Harris\\\"}}\"}, \"viz_type\": \"filter_box\", \"remote_id\": 86, \"datasource_name\": \"almost_everything\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Artist filter",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.almost_everything",
+                            "datasource_type": "table",
+                            "id": 87,
+                            "params": "{\"adhoc_filters\": [], \"annotation_layers\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"bnbColors\", \"comparison_type\": \"values\", \"contribution\": false, \"controlGroups\": {\"groupby\": \"groupby\", \"metrics\": \"metrics\"}, \"datasource\": \"17__table\", \"granularity_sqla\": \"stream_date\", \"groupby\": [], \"label_colors\": {\"Anuel AA\": \"#7b0051\", \"Apache 207\": \"#ffb400\", \"Ariana Grande\": \"#7b0051\", \"Ava Max\": \"#b37e00\", \"Avicii\": \"#ff1ab1\", \"Azet\": \"#00a1b3\", \"Bausa\": \"#00d1c1\", \"Bazzi\": \"#00b3a5\", \"Billie Eilish\": \"#007A87\", \"Bonez MC\": \"#988b4e\", \"Calvin Harris\": \"#cc0086\", \"Capital Bra\": \"#ff5a5f\", \"Capo\": \"#cbc29a\", \"Cardi B\": \"#b37e00\", \"DJ Snake\": \"#007A87\", \"Daddy Yankee\": \"#007A87\", \"Dalex\": \"#005c66\", \"Dardan\": \"#8ce071\", \"Drake\": \"#7b0051\", \"Dua Lipa\": \"#00ffeb\", \"Ed Sheeran\": \"#00d1c1\", \"Eno\": \"#cbc29a\", \"Farid Bang\": \"#ff5a5f\", \"Fero47\": \"#ff3339\", \"Halsey\": \"#b4a76c\", \"Imagine Dragons\": \"#ff3339\", \"Joker Bra\": \"#00a1b3\", \"Jonas Brothers\": \"#8ce071\", \"Juice WRLD\": \"#ff1ab1\", \"Juju\": \"#ffb400\", \"KC Rebell\": \"#00ffeb\", \"Kalazh44\": \"#00b3a5\", \"Khalid\": \"#00a1b3\", \"Kontra K\": \"#cbc29a\", \"Kygo\": \"#ff8083\", \"Lady Gaga\": \"#ffb400\", \"Lauv\": \"#00b3a5\", \"Lena\": \"#988b4e\", \"Lewis Capaldi\": \"#ff5a5f\", \"Lil Baby\": \"#007A87\", \"Lil Nas X\": \"#bbedab\", \"Lil Tecca\": \"#bbedab\", \"Lizzo\": \"#ffd266\", \"Loredana\": \"#b4a76c\", \"Luciano\": \"#005c66\", \"MERO\": \"#cc0086\", \"Mabel\": \"#cc0086\", \"Mariah Carey\": \"#988b4e\", \"Marshmello\": \"#00ffeb\", \"Nimo\": \"#ff1ab1\", \"Ozuna\": \"#ffb400\", \"Paulo Londra\": \"#b4a76c\", \"Post Malone\": \"#ff8083\", \"Queen\": \"#ff8083\", \"RAF Camora\": \"#00a1b3\", \"RIN\": \"#55d12e\", \"ROSAL\\u00cdA\": \"#ff8083\", \"Robin Schulz\": \"#00ffeb\", \"Roddy Ricch\": \"#b37e00\", \"SUM(no_streams)\": \"#00d1c1\", \"Sam Smith\": \"#005c66\", \"Samra\": \"#8ce071\", \"Sech\": \"#55d12e\", \"Selena Gomez\": \"#7b0051\", \"Shindy\": \"#bbedab\", \"Shirin David\": \"#ff3339\", \"Sido\": \"#ff5a5f\", \"Summer Cem\": \"#ffd266\", \"Taylor Swift\": \"#00d1c1\", \"The Chainsmokers\": \"#cc0086\", \"Tones and I\": \"#8ce071\", \"Travis Scott\": \"#55d12e\", \"Tyga\": \"#bbedab\", \"Ufo361\": \"#ffd266\", \"XXXTENTACION\": \"#b4a76c\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"no_streams\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 6, \"is_dttm\": false, \"optionName\": \"_col_no_streams\", \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(no_streams)\", \"optionName\": \"metric_459t5ygaxzx_hxo0dr56k3n\", \"sqlExpression\": null}], \"order_desc\": true, \"reduce_x_ticks\": false, \"resample_method\": null, \"resample_rule\": null, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_bar_value\": false, \"show_brush\": \"auto\", \"show_controls\": false, \"show_legend\": true, \"slice_id\": 87, \"time_grain_sqla\": \"P1M\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"timeseries_limit_metric\": null, \"url_params\": {}, \"viz_type\": \"bar\", \"x_axis_format\": \"smart_date\", \"x_axis_label\": \"\", \"x_axis_showminmax\": false, \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"remote_id\": 87, \"datasource_name\": \"almost_everything\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Sum of streams per month",
+                            "viz_type": "bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.almost_everything",
+                            "datasource_type": "table",
+                            "id": 89,
+                            "params": "{\"adhoc_filters\": [], \"controlGroups\": {\"metric\": \"metrics\"}, \"datasource\": \"17__table\", \"granularity_sqla\": \"stream_date\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"no_streams\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 450, \"is_dttm\": false, \"optionName\": \"_col_no_streams\", \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(no_streams)\", \"optionName\": \"metric_308bnf8or2a_da6xfj0viyf\", \"sqlExpression\": null}, \"slice_id\": 89, \"subheader_font_size\": 0.15, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"86\\\": {\\\"artist\\\": \\\"Calvin Harris\\\"}}\"}, \"viz_type\": \"big_number_total\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 89, \"datasource_name\": \"almost_everything\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Number of streams overall",
+                            "viz_type": "big_number_total"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "staging.almost_everything",
+                            "datasource_type": "table",
+                            "id": 90,
+                            "params": "{\"adhoc_filters\": [], \"cell_padding\": 2, \"cell_radius\": 0, \"cell_size\": 10, \"controlGroups\": {\"metrics\": \"metrics\"}, \"datasource\": \"17__table\", \"domain_granularity\": \"month\", \"granularity_sqla\": \"stream_date\", \"linear_color_scheme\": \"blue_white_yellow\", \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"no_streams\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 450, \"is_dttm\": false, \"optionName\": \"_col_no_streams\", \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(no_streams)\", \"optionName\": \"metric_nyvjk4q371i_atq7ye0336p\", \"sqlExpression\": null}], \"show_legend\": true, \"show_metric_name\": true, \"show_values\": false, \"slice_id\": 90, \"steps\": 10, \"subdomain_granularity\": \"day\", \"time_range\": \"2019-01-01T00:00:00 : 2020-02-29T00:00:00\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"cal_heatmap\", \"x_axis_time_format\": \"smart_date\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 90, \"datasource_name\": \"almost_everything\", \"schema\": \"staging\", \"database_name\": \"Spotify Data\"}",
+                            "slice_name": "Daily streams",
+                            "viz_type": "cal_heatmap"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "artist",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 447,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "VARCHAR(200)",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "stream_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 448,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "DATE",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "rank",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 449,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "no_streams",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 450,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 451,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "VARCHAR(32)",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "column_name": "track_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 452,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 17,
+                            "type": "VARCHAR(500)",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 2,
+                "default_endpoint": null,
+                "description": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "stream_date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:28:39"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "id": 25,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 17,
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 17, \"database_name\": \"Spotify Data\"}",
+                "schema": "staging",
+                "sql": null,
+                "table_name": "almost_everything",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "stream_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 453,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "DATE",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "artist",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 454,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "VARCHAR(200)",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "track_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 455,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "VARCHAR(500)",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "rank",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 456,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "no_streams",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 457,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "artist_2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 458,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "VARCHAR",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "track_name_2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 459,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "VARCHAR",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "no_streams_2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 460,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "column_name": "rank_2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 461,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 18,
+                            "type": "INTEGER",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 2,
+                "default_endpoint": null,
+                "description": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "stream_date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T15:53:58"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "id": 26,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 18,
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 18, \"database_name\": \"Spotify Data\"}",
+                "schema": "staging",
+                "sql": null,
+                "table_name": "vorlesung",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "column_name": "artist",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 445,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "VARCHAR(200)",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "column_name": "stream_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 446,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 16,
+                            "type": "DATE",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 2,
+                "default_endpoint": null,
+                "description": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "stream_date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-05-10T14:51:10"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "id": 24,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 16,
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 16, \"database_name\": \"Spotify Data\"}",
+                "schema": "staging",
+                "sql": null,
+                "table_name": "name_cloud",
+                "template_params": null
+            }
+        }
+    ]
+}

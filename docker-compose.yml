@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  superset:
+    image: "michaelweidmann/superset-postgresql"
+    ports:
+    - "8080:8080"
+    networks:
+    - db-network
+    volumes:
+    - superset-data:/app/superset_home
+    container_name: superset
+  postgres:
+    image: "abuckenhofer/columnarpostgresql"
+    ports:
+    - "5432:5432"
+    networks:
+    - db-network
+    volumes:
+    - postgres-data:/var/lib/postgresql/data
+    container_name: spotify-data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: spotify
+
+volumes:
+  postgres-data:
+    external: true
+  superset-data:
+    external: true
+
+networks:
+  db-network:
